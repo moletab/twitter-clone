@@ -7,7 +7,7 @@ So there are not user accounts and follow function. You can challenge after you 
 ```
 Check out [LIVE Twitter clone DEMO](https://twitterclone-troy.herokuapp.com/) here!!
 
-screenshot
+![Capture](https://user-images.githubusercontent.com/75588548/157348136-c823ddb1-fc40-4ae5-93f4-a6769e93576f.PNG)
 
 
 
