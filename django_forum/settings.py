@@ -30,7 +30,11 @@ SECRET_KEY = 'django-insecure-u!c!_x5s)5n+hvrdl3i&!nv^10=^i17iow=h9udu#h8evb(fc1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']
+        X_FRAME_OPTIONS = "*"
+        CORS_ORIGIN_ALLOW_ALL = True
+        CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1:8000','https://0.0.0:3000']
+
 
 
 # Application definition
@@ -44,9 +48,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'posts',
     'cloudinary',
+    'cosrheaders'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
